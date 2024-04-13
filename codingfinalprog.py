@@ -111,19 +111,83 @@ if word_or_letter == "word":
         print("—----—-----------")
         print("You lost :(. The correct word was " + word)
 elif word_or_letter == "letter":
-    win = 0
-    for i in range(5):
-      lguessc1 = input("What is your guess? ")
-      if lguessc1 == word[i]:
+    win = 0 
+    guessl1 = input("What is your first letter guess?")
+    if guessl1 in word:
         print("That is correct!")
         win = win + 1
-      else:
-          print("Sorry, Incorrect.")
-    if win == 5 :
-        print("Congrats! You won!")
     else:
-         print("You lost :(. The correct word was " + word + ".")
-
+        print("Sorry, Incorrect.")
+        print("—--------------|")
+        print("|              |")
+        print("|              @")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("—----—-----------")
+        guessl2 = input("What is your second letter guess?")
+        if guessl2 in word:
+            print("That is correct!")
+            win = win + 1
+        else:
+            print("Sorry, Incorrect.")
+            print("—--------------|")
+        print("|              |")
+        print("|              @")
+        print("|             /| ")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("—----—-----------")
+        guessl3 = input("What is your third letter guess?")
+        if guessl3 in word:
+            print("That is correct!")
+            win = win + 1
+        else: 
+            print("Sorry, Incorrect.")
+            print("—--------------|")
+        print("|              |")
+        print("|              @")
+        print("|             /| ")
+        print("|             /   ")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("—----—-----------")
+        guessl4 = input("What is your fourth letter guess?")
+        if guessl4 in word:
+            print("That is correct!")
+            win = win + 1
+        else:
+            print("Sorry, Incorrect")
+            print("—--------------|")
+        print("|              |")
+        print("|              @")
+        print("|             /|\ ")
+        print("|             /   ")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("|")
+        print("—----—-----------")
+            
+            
+            
+        
 # If the user inputs a term that is not "word" or "letter" they will be met with this error. Letter and Word should be all lowercase
 else:
    print("Error! You can only choose between a letter or word. (If you got here by accident try using all lowercase or check your spelling.)")
